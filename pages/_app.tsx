@@ -1,10 +1,27 @@
 import React from 'react';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from '../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => { 
-  return <h1> Hello World </h1>
+  return (
+    <>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Head>
+            <title>Games4Linux</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          </Head>
+
+          <Component {...pageProps} />
+        </PersistGate>
+      </Provider>
+    </>
+  )
  }
 
 export default MyApp
