@@ -14,21 +14,18 @@ const PainelHeader: React.FC = () => {
 
       <Col md={4} className="mt-2 text-center">
         <Row>
-          <Col md={6} className="mb-4 mb-md-0">
+          <Col md={8} className="mb-4 mb-md-0">
             <InputGroup>
                 <FormControl placeholder="Search game" className={styles.input} />
             </InputGroup>
           </Col>
 
-          <Col md={6}>
+          <Col md={4}>
             <Row>
-              <Col md={4} xs={4}>
+              <Col md={6} xs={6}>
                 <FontAwesomeIcon icon={faSearch} color="var(--color-gray-light)"/>
               </Col>
-              <Col md={4} xs={4}>
-                <FontAwesomeIcon icon={faShoppingCart} color="var(--color-gray-light)"/>
-              </Col>
-              <Col md={4} xs={4}>
+              <Col md={6} xs={6}>
                 <FontAwesomeIcon icon={faUserCircle} color="var(--color-gray-light)"/>
               </Col>
             </Row>
