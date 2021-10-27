@@ -14,7 +14,7 @@ const PainelFooter: React.FC = () => {
           <Col lg={7} md={12}>
             <Row>
               <Col lg={3} md={12} className="mb-4 mb-lg-0">
-                Follow us
+                Follow me
               </Col>
 
               <Col lg={7} md={12} className="mb-4 mb-lg-0">
@@ -76,7 +76,7 @@ const PainelFooter: React.FC = () => {
           </Col>
 
           <Col lg={{span: 2, offset: 1}} xs={{span: 6, offset: 3}}>
-            <Image src="/assets/logo-joystick.png" alt="Logo Bootcamp" width={120} height={60} />
+            <Image src="/assets/logo-joystick.png" alt="Logo Joystick" width={100} height={60} />
           </Col>
         </Row>
       </Col>
